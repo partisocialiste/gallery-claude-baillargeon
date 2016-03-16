@@ -132,11 +132,11 @@ Intro page
   -moz-osx-font-smoothing: grayscale; }
 .cd-intro-block.items-visible {
   /* translate the .cd-intro-block element to reveal the projects slider */
-  -webkit-transform: translateY(-92%);
-  -moz-transform: translateY(-92%);
-  -ms-transform: translateY(-92%);
-  -o-transform: translateY(-92%);
-  transform: translateY(-92%);
+  -webkit-transform: translateY(-90%);
+  -moz-transform: translateY(-90%);
+  -ms-transform: translateY(-90%);
+  -o-transform: translateY(-90%);
+  transform: translateY(-90%);
   box-shadow: 0 4px 40px rgba(0, 0, 0, 0.6);
   cursor: pointer; }
 .cd-intro-block.items-visible:after {
@@ -174,11 +174,11 @@ Intro page
     font-size: 4.4rem;
     font-weight: 300; }
   .cd-intro-block.items-visible {
-    -webkit-transform: translateY(-95%);
-    -moz-transform: translateY(-95%);
-    -ms-transform: translateY(-95%);
-    -o-transform: translateY(-95%);
-    transform: translateY(-95%); }
+    -webkit-transform: translateY(-92%);
+    -moz-transform: translateY(-92%);
+    -ms-transform: translateY(-92%);
+    -o-transform: translateY(-92%);
+    transform: translateY(-92%); }
 }
 @media only screen and (max-width: 768px) {
   .cd-intro-block img {
