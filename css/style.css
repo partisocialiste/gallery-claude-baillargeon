@@ -132,11 +132,11 @@ Intro page
   -moz-osx-font-smoothing: grayscale; }
 .cd-intro-block.items-visible {
   /* translate the .cd-intro-block element to reveal the projects slider */
-  -webkit-transform: translateY(-90%);
-  -moz-transform: translateY(-90%);
-  -ms-transform: translateY(-90%);
-  -o-transform: translateY(-90%);
-  transform: translateY(-90%);
+  -webkit-transform: translateY(-92%);
+  -moz-transform: translateY(-92%);
+  -ms-transform: translateY(-92%);
+  -o-transform: translateY(-92%);
+  transform: translateY(-92%);
   box-shadow: 0 4px 40px rgba(0, 0, 0, 0.6);
   cursor: pointer; }
 .cd-intro-block.items-visible:after {
@@ -163,6 +163,9 @@ Intro page
   }
   .btn-share .icon-facebook {
     margin-right: 10px;
+  }
+  .btn-fullscreen {
+    margin-right: 10px; 
   }
 @media only screen and (min-width: 900px) {
   .cd-intro-block::after {
@@ -745,9 +748,15 @@ Project content panel
     top: 10px;
     right: 10px;
     background: url(../img/cd-close.svg) no-repeat center center; }
+  @media only screen and (max-width: 992px) {
+    .cd-item-content h2 {
+      width: 90%;
+    }
+  }
   @media only screen and (min-width: 900px) {
     .cd-item-content h2 {
-      font-size: 6rem; }
+      font-size: 6rem; 
+    }
     .cd-item-content em {
       font-size: 2.4rem; }
     .cd-item-content p {
