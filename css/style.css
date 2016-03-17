@@ -17,8 +17,14 @@ body {
 
 a {
   color: #e20040;
-  text-decoration: none; }
-
+  text-decoration: none;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  transition: all 0.2s;
+}
+a:hover {
+  color: #92002a;
+}
 img {
   max-width: 100%; }
 
@@ -164,6 +170,9 @@ Intro page
   .btn-share .icon-facebook {
     margin-right: 10px;
   }
+  .btn-fullscreen {
+    margin-right: 10px; 
+  }
 @media only screen and (min-width: 900px) {
   .cd-intro-block::after {
     top: 97.5%; }
@@ -171,11 +180,11 @@ Intro page
     font-size: 4.4rem;
     font-weight: 300; }
   .cd-intro-block.items-visible {
-    -webkit-transform: translateY(-95%);
-    -moz-transform: translateY(-95%);
-    -ms-transform: translateY(-95%);
-    -o-transform: translateY(-95%);
-    transform: translateY(-95%); }
+    -webkit-transform: translateY(-92%);
+    -moz-transform: translateY(-92%);
+    -ms-transform: translateY(-92%);
+    -o-transform: translateY(-92%);
+    transform: translateY(-92%); }
 }
 @media only screen and (max-width: 768px) {
   .cd-intro-block img {
@@ -686,17 +695,23 @@ Project content panel
     margin-left: auto;
     margin-right: auto;}
   .embed-responsive {
+    margin-left: 8.33333333%!important;
+    width: 83.33333333%;
     max-width: initial!important;
-    margin-left: initial!important;
     margin-right: initial!important;
     position: relative;
     display: block;
     height: 0;
     padding: 0;
     overflow: hidden;
-    margin-bottom: 40px;}
+    margin-bottom: 40px;
+  }
   .embed-responsive-16by9 {
-    padding-bottom: 56.25%;}
+    padding-bottom: 56.25%;
+  }
+  .embed-responsive-4by3 {
+    padding-bottom: 75%;
+  }
   .embed-responsive .embed-responsive-item, .embed-responsive embed, .embed-responsive iframe, .embed-responsive object, .embed-responsive video {
     position: absolute;
     top: 0;
@@ -704,7 +719,14 @@ Project content panel
     left: 0;
     width: 100%;
     height: 100%;
-    border: 0;}
+    border: 0;
+  }
+  @media only screen and (max-width: 768px) {
+    .embed-responsive {
+      width: 100%;
+      margin-left: initial!important;
+    }
+  }
   .cd-item-content.is-visible {
     overflow-y: auto;
     visibility: visible;
@@ -745,9 +767,15 @@ Project content panel
     top: 10px;
     right: 10px;
     background: url(../img/cd-close.svg) no-repeat center center; }
+  @media only screen and (max-width: 992px) {
+    .cd-item-content h2 {
+      width: 90%;
+    }
+  }
   @media only screen and (min-width: 900px) {
     .cd-item-content h2 {
-      font-size: 6rem; }
+      font-size: 6rem; 
+    }
     .cd-item-content em {
       font-size: 2.4rem; }
     .cd-item-content p {
