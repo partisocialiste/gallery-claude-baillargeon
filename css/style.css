@@ -641,7 +641,7 @@ Project content panel
     position: relative;
     margin: 0 auto;
     min-height: 350px;
-    z-index: 999;
+    z-index: 9999;
     /*width: 100%;
     height: 100%;*/
   }
@@ -765,7 +765,7 @@ Project content panel
     height: 32px;
     width: 32px;
     position: absolute;
-    z-index: 999;
+    z-index: 9999;
     top: 10px;
     right: 10px;
     background: url(../img/cd-close.svg) no-repeat center center; }
