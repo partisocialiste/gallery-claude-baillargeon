@@ -642,12 +642,11 @@ Project content panel
     margin: 0 auto;
     min-height: 350px;
     z-index: 9999;
-    /*width: 100%;
-    height: 100%;*/
+    
   }
   .bg-header h2 {
     text-shadow: 1px 1px 0 #000000;
-    z-index: 1000;
+    
     margin: 0 auto;
     padding: 0 1.25em;
     text-align: center;
@@ -660,14 +659,9 @@ Project content panel
     color: #fff;
   }
   .img-header {
-    position: absolute;
+    position: relative;
     overflow: hidden;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
+    min-height: 350px;
     background-color: #e20040;
   }
   .img-header img {
