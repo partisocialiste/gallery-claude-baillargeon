@@ -23,7 +23,6 @@ $bouton.addEventListener('click', function() {
 
 	var resizing = false;
 
-
 	//if on desktop - set a width for the $itemsSlider element
 	setSliderContainer();
 	$(window).on('resize', function(){
